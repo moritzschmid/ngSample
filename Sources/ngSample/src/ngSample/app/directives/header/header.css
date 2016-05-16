@@ -2,9 +2,12 @@
 {
     width:100%;
     min-height:200px;
+    height:200px;
     background-color: #333;
-    font-size: 200px;
-    color:#393939;
+    font-size: 400px;
+    color:#333311;
     text-align: center;
     font-weight: bold;
+    overflow: hidden;
+    
 }
