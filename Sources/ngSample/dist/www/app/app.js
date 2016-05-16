@@ -16,7 +16,7 @@ angular.module('app')
                 }).
                 when('/list', {
                     templateUrl: 'app/pages/list/list.html',
-                    controller: 'ShowOrdersController'
+                    controller: 'ListController'
                 }).
                 otherwise({
                     redirectTo: '/home'
@@ -39,10 +39,24 @@ angular.module('app')
         .module('app')
         .controller('HomeController', HomeController);
         
-        function HomeController()
+        function HomeController($scope)
         {
-            var vm = this;
-            vm.name = "waawawawawaw";
+            $scope.name = "waawawawawaw";
+            
+        }
+         
+})(); 
+
+(function() {
+    'use strict';
+
+    angular
+        .module('app')
+        .controller('ListController', ListController);
+        
+        function ListController($scope)
+        {
+            $scope.name = "List all items";
             
         }
          

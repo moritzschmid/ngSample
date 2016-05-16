@@ -9,7 +9,7 @@ angular.module('app')
                 }).
                 when('/list', {
                     templateUrl: 'app/pages/list/list.html',
-                    controller: 'ShowOrdersController'
+                    controller: 'ListController'
                 }).
                 otherwise({
                     redirectTo: '/home'

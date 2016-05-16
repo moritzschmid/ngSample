@@ -5,10 +5,9 @@
         .module('app')
         .controller('HomeController', HomeController);
         
-        function HomeController()
+        function HomeController($scope)
         {
-            var vm = this;
-            vm.name = "waawawawawaw";
+            $scope.name = "waawawawawaw";
             
         }
          
