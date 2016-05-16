@@ -4,8 +4,9 @@
         gulp = require('gulp'),
         del = require('del'),
         runSequence = require('run-sequence'),
-        gulptasks = require('require-dir')('./gulpTasks');
-    
+        gulptasks = require('require-dir')('./gulpTasks')
+        ;
+
     for (var gulpTask in gulptasks) {
         gulptasks[gulpTask].init(gulp, config);
     }

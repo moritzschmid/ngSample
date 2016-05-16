@@ -7,7 +7,7 @@ module.exports = {
         files: {
             injectables: [
                 './dist/www/scripts/angular.min.js',
-                './dist/www/app/app.js'
+                './dist/www/app/app.js',
                 // ,
                 // './dist/www/app/app.route.js'
                 
@@ -17,7 +17,7 @@ module.exports = {
                 // './dist/www/scripts/angular2.min.js',
                 // './dist/www/scripts/system.setup.js',
                 // './dist/www/css/vendor.min.css',
-                // './dist/www/css/app.css'
+                 './dist/www/css/app.css'
             ],
             main: [
                 './src/ngSample/index.html'
@@ -36,7 +36,7 @@ module.exports = {
                 ],
                 css: [
 
-                    './src/ngSample/css/**/*.css'
+                    './src/ngSample/**/*.css'
                 ],
                 componentCss: [
                     './src/ngSample/app/**/*.css'

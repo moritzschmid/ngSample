@@ -2,9 +2,10 @@
     'use strict';
 
     angular
-        .module('app',['ngRoute']);
+    
+        .module('app',['ngRoute']); 
          
-})(); 
+})();  
 //Define an angular module for our app
 angular.module('app')
     .config(['$routeProvider',

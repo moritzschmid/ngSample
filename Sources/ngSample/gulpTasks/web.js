@@ -12,7 +12,8 @@
             batch = require('gulp-batch'),
             server = require('gulp-server-livereload'),
             inject = require('gulp-inject'),
-            concat = require('gulp-concat')
+            concat = require('gulp-concat'),
+            cssmin = require('gulp-minify-css')
 
             ;
 
@@ -43,13 +44,19 @@
                     // '[private-web]:vendor-css',
                     // '[private-web]:copy-fonts',
                     '[private-web]:copy-app-html',
-                    // '[private-web]:copy-app-styles',
+                    '[private-web]:copy-app-styles',
                     // '[private-web]:copy-component-styles',
                     // '[private-web]:copy-app-assets'
                 ],
                 '[private-web]:copy-template',
                 done
             );
+        });
+
+        gulp.task('[private-web]:copy-app-styles', function () {
+            return gulp.src(config.source.files.app.css)
+                .pipe(cssmin())
+                .pipe(gulp.dest(path.join(config.targets.buildFolder, config.targets.stylesFolder)));
         });
 
         gulp.task('[private-web]:copy-angular1-scripts', function () {
