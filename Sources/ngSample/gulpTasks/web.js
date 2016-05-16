@@ -55,6 +55,7 @@
 
         gulp.task('[private-web]:copy-app-styles', function () {
             return gulp.src(config.source.files.app.css)
+                .pipe(concat(config.targets.minified.css))
                 .pipe(cssmin())
                 .pipe(gulp.dest(path.join(config.targets.buildFolder, config.targets.stylesFolder)));
         });

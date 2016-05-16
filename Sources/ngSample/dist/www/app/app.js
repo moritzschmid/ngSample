@@ -33,6 +33,21 @@ angular.module('app')
         $scope.message = 'This is Show orders screen';
 
     });
+(function () {
+    'use strict';
+
+    angular
+
+        .module('app')
+        .directive('appHeader', appHeader);
+
+    function appHeader( ) {
+
+        return {
+            templateUrl: 'app/directives/header/header.html'
+        };
+    }
+})();  
 (function() {
     'use strict';
 
