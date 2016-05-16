@@ -1,10 +1,3 @@
-(function() {
-    'use strict';
-
-    angular
-        .module('app',['ngRoute']);
-         
-})(); 
 //Define an angular module for our app
 angular.module('app')
     .config(['$routeProvider',
@@ -32,18 +25,3 @@ angular.module('app')
         $scope.message = 'This is Show orders screen';
 
     });
-(function() {
-    'use strict';
-
-    angular
-        .module('app')
-        .controller('HomeController', HomeController);
-        
-        function HomeController()
-        {
-            var vm = this;
-            vm.name = "waawawawawaw";
-            
-        }
-         
-})(); 

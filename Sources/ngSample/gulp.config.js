@@ -8,6 +8,8 @@ module.exports = {
             injectables: [
                 './dist/www/scripts/angular.min.js',
                 './dist/www/app/app.js'
+                // ,
+                // './dist/www/app/app.route.js'
                 
                 // './dist/www/scripts/es6-shim.min.js',
                 // './dist/www/scripts/shims_for_IE.js',

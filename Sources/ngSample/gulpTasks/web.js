@@ -60,7 +60,7 @@
         });
         gulp.task('[private-web]:build-app-scripts', function () {
             return gulp.src(config.source.files.app.js)
-
+                .pipe(concat(config.targets.minified.js))
                 .pipe(gulp.dest(path.join(config.targets.buildFolder, config.targets.appFolder)));
         });
 
