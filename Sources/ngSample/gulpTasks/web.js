@@ -96,6 +96,7 @@
                     '[private-web]:copy-app-html',
                     '[private-web]:build-app-scripts',
                     '[private-web]:copy-template',
+                    '[private-web]:copy-app-styles',
                     done);
             }));
         }
