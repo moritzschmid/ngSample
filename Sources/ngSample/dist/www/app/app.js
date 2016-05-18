@@ -41,8 +41,18 @@ angular.module('app')
         .module('app')
         .directive('appHeader', appHeader);
 
-    function appHeader( ) {
+    function   appHeader    ( ) {
 
+        function link ()
+        {
+            var aa = 'bb';
+            
+            var bb = 'cc'; 
+            if (bb === aa)
+            {
+                alert('');
+            }
+        }
         return {
             templateUrl: 'app/directives/header/header.html'
         };

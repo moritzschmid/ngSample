@@ -13,8 +13,10 @@
             server = require('gulp-server-livereload'),
             inject = require('gulp-inject'),
             concat = require('gulp-concat'),
-            cssmin = require('gulp-minify-css')
-
+            cssmin = require('gulp-minify-css'),
+            jshint = require('gulp-jshint'),
+            jshintstylish = require('jshint-stylish'),
+            jscs = require('gulp-jscs')
             ;
 
         // gulp.task('[private-web]:bundle-vendor-scripts', function () {
@@ -113,6 +115,23 @@
             return gulp.src(config.source.files.main)
                 .pipe(inject(sources, { addRootSlash: false, ignorePath: 'dist/www' }))
                 .pipe(gulp.dest(path.join(config.targets.buildFolder)));
+        });
+
+
+
+
+        gulp.task('jshint', function () {
+            return gulp
+                .src(config.source.files.app.js)
+                .pipe(jshint())
+                .pipe(jshint.reporter('jshint-stylish'))
+                .pipe(jshint.reporter('fail'));
+        });
+        
+        gulp.task('jscs', function () {
+            return  gulp.src(config.source.files.app.js)
+                .pipe(jscs())
+                ;
         });
 
     }

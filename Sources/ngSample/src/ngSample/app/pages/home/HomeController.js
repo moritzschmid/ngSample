@@ -7,7 +7,7 @@
         
         function HomeController($scope)
         {
-            $scope.name = "waawawawawaw";
+            $scope.name = 'waawawawawaw';
             
         }
          

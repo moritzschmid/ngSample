@@ -28,6 +28,28 @@
                 "$tsc",
                 "$jshint"
             ]
+        },
+         {
+            "taskName": "jshint",
+            "args": [],
+            "isBuildCommand": true,
+            "isWatching": true,
+            "problemMatcher": [
+                "$lessCompile",
+                "$tsc",
+                "$jshint"
+            ]
+        },
+         {
+            "taskName": "jscs",
+            "args": [],
+            "isBuildCommand": true,
+            "isWatching": true,
+            "problemMatcher": [
+                "$lessCompile",
+                "$tsc",
+                "$jshint"
+            ]
         }
         
     ]

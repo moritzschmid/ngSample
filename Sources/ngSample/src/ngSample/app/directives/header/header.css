@@ -1,13 +1,13 @@
 .header
 {
     width:100%;
-    min-height:200px;
-    height:200px;
+    /*min-height:200px;
+    height:200px;*/
+    line-height: 150px;
     background-color: #333;
-    font-size: 400px;
+    font-size: 300px;
     color:#333311;
-    text-align: center;
-    font-weight: bold;
-    overflow: hidden;
-    
+    text-align: top;
+    font-weight:bolder;
+    overflow: hidden;  
 }
