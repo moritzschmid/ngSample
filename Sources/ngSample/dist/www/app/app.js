@@ -3,7 +3,7 @@
 
     angular
     
-        .module('app',['ngRoute']); 
+        .module('app',['ngRoute','ngMaterial']); 
          
 })();  
 //Define an angular module for our app
@@ -37,53 +37,72 @@ angular.module('app')
     'use strict';
 
     angular
-
         .module('app')
         .directive('appHeader', appHeader);
 
-    function   appHeader    ( ) {
-
-        function link ()
-        {
-            var aa = 'bb';
-            
-            var bb = 'cc'; 
-            if (bb === aa)
-            {
-                alert('');
-            }
-        }
-        return {
+    function appHeader() {
+        var directive = {
+            link: link,
             templateUrl: 'app/directives/header/header.html'
         };
+        return directive;
+
+        function link() {
+            var aa = 'bb';
+            var bb = 'cc';
+            if (bb === aa) {
+                console.log('');
+            }
+        }
     }
 })();  
-(function() {
+(function () {
+    'use strict';
+
+    angular
+        .module('app')
+        .directive('progressbar', progressbar);
+
+    function progressbar() {
+        var directive = {
+            link: link,
+            templateUrl: 'app/directives/progressbar/progressbar.html',
+            scope: {
+                stageinfos: '='
+            }
+        };
+        return directive;
+
+        function link() {
+         
+        }
+    }
+})();  
+(function () {
     'use strict';
 
     angular
         .module('app')
         .controller('HomeController', HomeController);
-        
-        function HomeController($scope)
-        {
-            $scope.name = "waawawawawaw";
-            
-        }
-         
+
+    function HomeController($scope) {
+        $scope.name = 'waawawawawaw';
+        $scope.stageinfos = [
+            { 'id': 1, 'message': 'er wars' },
+            { 'id': 2, 'message': 'sie wawawars' }
+        ];
+    }
+
 })(); 
 
-(function() {
+(function () {
     'use strict';
 
     angular
         .module('app')
         .controller('ListController', ListController);
-        
-        function ListController($scope)
-        {
-            $scope.name = "List all items";
-            
-        }
-         
+
+    function ListController($scope) {
+        $scope.name = 'List all items';
+    }
 })(); 

@@ -78,7 +78,8 @@
             return gulp.src(config.targets.buildFolder)
                 .pipe(server({
                     livereload: true,
-                    //directoryListing: true,
+                    // //directoryListing: true,
+                     host:'192.168.178.48',
                     open: true,
                     defaultFile: 'index.html',
                     log: "debug"
@@ -95,6 +96,10 @@
 
                 runSequence(
                     //'[private-web]:copy-system-setup-script',
+                    
+                    'jshint',
+                    
+                    'jscs',
                     '[private-web]:copy-app-html',
                     '[private-web]:build-app-scripts',
                     '[private-web]:copy-template',

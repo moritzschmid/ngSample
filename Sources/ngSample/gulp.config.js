@@ -50,6 +50,8 @@ module.exports = {
                 './src/ngSample/vendor/admin-lte/css/AdminLTE.css',
                 './src/ngSample/vendor/admin-lte/css/skins/_all-skins.css',
                 './src/ngSample/vendor/font-awesome/css/font-awesome.css',
+                './node_modules/angular-material/angular-material.css'
+                
             ],
             vendorFonts: [
                 './src/ngSample/vendor/font-awesome/fonts/*.*',
@@ -79,8 +81,11 @@ module.exports = {
             ],
              angular1: [
                 './node_modules/angular/angular.js',
-                './node_modules/angular-route/angular-route.js'
-                
+                './node_modules/angular-route/angular-route.js',
+                './node_modules/angular-animate/angular-animate.js',
+                './node_modules/angular-aria/angular-aria.js',
+                './node_modules/angular-material/angular-material.js',
+                './node_modules/angular-messages/angular-messages.js'
             ]
         }
     },
