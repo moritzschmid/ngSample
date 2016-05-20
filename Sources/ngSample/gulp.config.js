@@ -13,10 +13,10 @@ module.exports = {
                 
                 // './dist/www/scripts/es6-shim.min.js',
                 // './dist/www/scripts/shims_for_IE.js',
-                // './dist/www/scripts/vendor.min.js',
+                //'./dist/www/scripts/vendor.min.js',
                 // './dist/www/scripts/angular2.min.js',
                 // './dist/www/scripts/system.setup.js',
-                // './dist/www/css/vendor.min.css',
+                 './dist/www/css/vendor.min.css',
                  './dist/www/css/app.css'
             ],
             main: [

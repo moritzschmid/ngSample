@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
     <title>ngSample</title>
+
     <!-- inject:css -->
+    <link rel="stylesheet" href="css/vendor.min.css">
     <link rel="stylesheet" href="css/app.css">
     <!-- endinject -->
 </head>
 
-<body ng-app="app" ng-cloak>
-    <app-header></app-header>
+<body ng-app="app">
 
-    <nav class="control-sidebar-bg">
-        <a href="#list">list</a><br>
+    <div class="container">
+
+        <md-toolbar>
+            nngSample
+        </md-toolbar>
+    </div>
+    <md-sidenav md-is-locked-open="true">
+        <a href="#list">list</a>
         <a href="#home">home</a>
-    </nav>
+    </md-sidenav>
+    <md-content id='content' flex>content</md-content>
 
-    <section class="content scrolling-module">
-        <div ng-view>
 
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <span>With &hearts; by you</span>
-    </footer>
 
 </body>
 <!-- inject:js -->

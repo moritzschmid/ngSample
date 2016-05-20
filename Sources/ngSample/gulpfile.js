@@ -17,6 +17,7 @@
         );
     });
 
+
     gulp.task('clean', function () {
         return del(config.targets.buildFolder + '/**/*', { force: true });
     });

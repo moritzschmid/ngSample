@@ -43,7 +43,7 @@
                     // '[private-web]:copy-system-setup-script',
                     // '[private-web]:copy-shim',
                     '[private-web]:build-app-scripts',
-                    // '[private-web]:vendor-css',
+                     '[private-web]:vendor-css',
                     // '[private-web]:copy-fonts',
                     '[private-web]:copy-app-html',
                     '[private-web]:copy-app-styles',
@@ -79,7 +79,7 @@
                 .pipe(server({
                     livereload: true,
                     // //directoryListing: true,
-                     host:'192.168.178.48',
+                     host:'192.168.178.23',
                     open: true,
                     defaultFile: 'index.html',
                     log: "debug"
@@ -123,6 +123,12 @@
         });
 
 
+ gulp.task('[private-web]:vendor-css', function () {
+            return gulp.src(config.source.files.vendorStylesheets)
+                .pipe(concat(config.targets.vendorMinCss))
+                .pipe(cssmin())
+                .pipe(gulp.dest(path.join(config.targets.buildFolder, config.targets.stylesFolder)));
+        });
 
 
         gulp.task('jshint', function () {

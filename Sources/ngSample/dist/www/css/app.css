@@ -1,1 +1,1 @@
-body{background-color:#ff8c00;margin:0!important;font-family:Verdana,Geneva,Tahoma,sans-serif}.header,nav{background-color:#333;font-weight:bolder}nav{float:left;width:100px;font-family:Verdana;font-size:1.4em;padding:10px;height:200px}nav a{text-decoration:none;color:#ff8c00}.header{width:100%;line-height:150px;font-size:300px;color:#331;text-align:top;overflow:hidden}
+md-sidenav{background-color:#f0f}md-content{background-color:#0f0}.header{width:100%;line-height:150px;background-color:#333;font-size:300px;color:#331;text-align:top;font-weight:bolder;overflow:hidden}
