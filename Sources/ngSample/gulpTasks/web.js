@@ -48,13 +48,18 @@
                     '[private-web]:copy-app-html',
                     '[private-web]:copy-app-styles',
                     // '[private-web]:copy-component-styles',
-                    // '[private-web]:copy-app-assets'
+                    '[private-web]:copy-app-assets'
                 ],
                 '[private-web]:copy-template',
                 done
             );
         });
 
+        gulp.task('[private-web]:copy-app-assets', function () {
+            return gulp.src(config.source.files.app.assets)
+                .pipe(gulp.dest(path.join(config.targets.buildFolder, config.targets.assets)));
+        });
+        
         gulp.task('[private-web]:copy-app-styles', function () {
             return gulp.src(config.source.files.app.css)
                 .pipe(concat(config.targets.minified.css))

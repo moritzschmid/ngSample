@@ -104,6 +104,7 @@ module.exports = {
             js: 'app.js',
             css: 'app.css',
             templateCache: 'ng-templates.js'
-        }
+        },
+        assets:'assets'
     }
 };
