@@ -27,9 +27,10 @@
 
     libraryService
           .loadAllBooks()
-          .then( function( books ) {
-            self.books    = [].concat(books);
-            self.selected = books[0];
+          .success( function( data ) {
+            
+            self.books    = data;
+            self.selected = self.books[0];
           });
 
     // *********************************

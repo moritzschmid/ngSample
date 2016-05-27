@@ -43,6 +43,9 @@ module.exports = {
                 ],
                 assets: [
                     './src/ngSample/assets/**/*.*'
+                ],
+                mockdata: [
+                    './src/ngSample/data/**/*.*'
                 ]
             },
             vendorStylesheets: [
@@ -105,6 +108,7 @@ module.exports = {
             css: 'app.css',
             templateCache: 'ng-templates.js'
         },
-        assets:'assets'
+        assets:'assets',
+        mockdata:"data"
     }
 };

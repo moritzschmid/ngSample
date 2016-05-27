@@ -86,7 +86,7 @@ md-button.menuBtn > md-icon {
 
 #content .md-button.share:active > md-icon {
   background-color: #dadada;
-  border-radius: 75%;
+  border-radius: 0px;
   padding:4px;
   transition: all 100ms ease-out 30ms;
 }
@@ -114,8 +114,8 @@ md-toolbar h1 {
   position: relative;
   width: 48px;
   height: 48px;
-  border: 1px solid #ddd;
-  border-radius: 50%;
+  border: 0px solid #ddd;
+  /*border-radius: 50%;*/
   display: inline-block;
   overflow: hidden;
   margin: 0px;
